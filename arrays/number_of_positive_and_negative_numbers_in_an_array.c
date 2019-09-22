@@ -22,6 +22,16 @@ int main() {
    
   }
   printf("Number of positive and negative numbers are %d and %d respectively ",pcount,ncount);
+
+  /* Using C++
+    for(int x:A) { // FOR EACH LOOP
+        if(x<0)
+            ncount++; // SAME AS ncount=ncount+1
+        else
+            pcount++; // SAME AS pcount=pcount+1;
+    }
+    cout<<pcount<<" "<<ncount;
+  */
   
   getch();
   return 0;
