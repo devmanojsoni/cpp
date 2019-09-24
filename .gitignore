@@ -3,3 +3,7 @@ log.txt
 *.exe
 /.vscode
 .vscode
+lauch.json
+tasks.json
+/.vscode/lauch.json
+/.vscode/tasks.json
