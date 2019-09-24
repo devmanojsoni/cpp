@@ -9,8 +9,7 @@
 int main() {
   
   /*Code here*/
-  
-  int A[2][3]={0};
+  int A[2][3]={0};// if i leave it like int A[2][3]={}; , it gives error
   printf("enter 6 elements for your 2x3 matrix:\n");
   for (int i=0; i<2; i++) {
    for (int j=0; j<3; j++) {
