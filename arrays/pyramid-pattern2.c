@@ -18,8 +18,15 @@ int main() {
    // 1st loop's body;
     for (int j=1; j<=2*n-1; j++) {
         if ( (j>=n-(i-1) ) && ( j<=n+(i-1) )){ // PRINTING STARS FROM n-(i-1) to n+(i-1)
-        //tab to make changes
-        printf("*");
+        //[ I am tasting stars from n-(i-1) to n+(i-1) ]
+            
+            printf("*");
+            /* print  different symbols in odd and even places
+             if(j%2==0){ 
+                 printf("#");
+             } else {
+                 printf("*");
+             }*/
         } else {
         printf(" ");
         }

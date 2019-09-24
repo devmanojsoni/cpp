@@ -9,6 +9,7 @@
 int main() {
   
   /*Code here*/
+  
   printf("when j<=i\n");
   // | T(n) = O(n^2)  or O(4^2)
   for (int i=0; i<4; i++) { // i=0 only initialized once | T(n) = O(n) 
@@ -16,6 +17,21 @@ int main() {
     if (j<=i){
      //tab to code
      printf("*");
+    } // here giving spaces is not required
+    //   it already gives an illusion of having spaces
+   }
+   printf("\n");
+  }
+
+
+  printf("floyd's triangle when j<=i\n");
+  // | T(n) = O(n^2)  or O(4^2)
+  int floyd=1;
+  for (int i=0; i<4; i++) { // i=0 only initialized once | T(n) = O(n) 
+   for (int j=0; j<4; j++) { // j=0 only initialized once | T(n) = O(n) 
+    if (j<=i){
+     //tab to code
+     printf("%d ",floyd++);
     } // here giving spaces is not required
     //   it already gives an illusion of having spaces
    }
