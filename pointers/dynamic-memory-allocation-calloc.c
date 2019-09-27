@@ -14,8 +14,8 @@ int main() {
   printf("Enter no of elements:\n");
   scanf("%d", &n);
   // Dynamically allocate memory using calloc()
-  // Syntax: (n, element-size) = (X, sizeof(data-type))
-  // Syntax: ptr = (cast-type*)calloc(n, element-size);
+  // Syntax: (n, element-size) --> (X, sizeof(data-type))
+  // Syntax: calloc --> ptr = (cast-type*)calloc(n, element-size);
   p = (int*) calloc (n, sizeof(int)); // Inside the heap memory
   
   // Check if the memory has been successfully
