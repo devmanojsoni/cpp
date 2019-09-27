@@ -3,7 +3,7 @@
 #include <stdlib.h> // Required for Malloc();
 
 /* Created by Manoj Soni on Friday, September 27, 2019  */
-/* Description: Dynamic Memory Allocation - Malloc()  */
+/* Description: Dynamic Memory Allocation - calloc()  */
 int main() {
   
   int *p; // int* p; this is also true, but when you declare more than one
@@ -14,12 +14,12 @@ int main() {
   printf("Enter no of elements:\n");
   scanf("%d", &n);
   // Dynamically allocate memory using malloc()
-  // Syntax: (byte-size) = X multiplied by the sizeof(data-type)
-  // Syntax: ptr = (cast-type*) malloc (byte-size)
-  p = (int*) malloc (n * sizeof(int)); // inside the heap memory
+  // Syntax: (n, element-size) = (X, sizeof(data-type))
+  // Syntax: ptr = (cast-type*)calloc(n, element-size);
+  p = (int*) calloc (n, sizeof(int)); // Inside the heap memory
   
   // Check if the memory has been successfully
-  // allocated by malloc or not
+  // allocated by calloc or not
   if (p == NULL){
     //tab to code
    printf("Memory not allocated.\n");
