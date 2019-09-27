@@ -17,6 +17,8 @@ int main() {
   // Syntax: (byte-size) --> X multiplied by the sizeof(data-type)
   // Syntax: malloc --> ptr = (cast-type*) malloc (byte-size)
   p = (int*) malloc (n * sizeof(int)); // inside the heap memory
+  // malloc() doesn’t initialize the allocated memory. 
+  // If we try to acess the content of memory block then we’ll get garbage values.
   
   // Check if the memory has been successfully
   // allocated by malloc or not

@@ -17,7 +17,9 @@ int main() {
   // Syntax: (n, element-size) --> (X, sizeof(data-type))
   // Syntax: calloc --> ptr = (cast-type*)calloc(n, element-size);
   p = (int*) calloc (n, sizeof(int)); // Inside the heap memory
-  
+  // calloc() allocates the memory and also initializes & allocates memory block to zero. 
+  // If we try to access the content of these blocks then we’ll get 0.
+
   // Check if the memory has been successfully
   // allocated by calloc or not
   if (p == NULL){
