@@ -38,12 +38,15 @@ int main() {
         printf("%d, ", p[i]); 
        }
 
+        int *p2;
         // Get the new size for the array 
         int new_size; 
         printf("\n\nEnter the new size for the previously allocated array:"); 
         scanf("%d", &new_size);
         // Dynamically re-allocate memory using realloc() 
-        p = realloc(p, new_size * sizeof(int)); 
+        p2 = realloc(p, new_size * sizeof(int)); 
+        // p2 = realloc(NULL, n*sizeof(int)); // equivalent to calling a malloc
+        // int *B = realloc(NULL, n*sizeof(int)); // equivalent to calling a malloc
   
         // Memory has been successfully allocated 
         printf("Memory successfully re-allocated using realloc.\n");
@@ -51,15 +54,16 @@ int main() {
   
         // Get the new elements of the new array 
         for (int i = 0; i < new_size; ++i) { 
-            p[i] = i + 1; 
+            p2[i] = i + 1; 
         } 
   
         // Print the elements of the new array 
         printf("The elements of the new array are: "); 
         for (int i = 0; i < new_size; ++i) { 
-            printf("%d, ", p[i]); 
+            printf("%d, ", p2[i]); 
         } 
   
+        free(p2); 
         free(p);
 
 
