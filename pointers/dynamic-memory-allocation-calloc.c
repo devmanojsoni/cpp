@@ -13,7 +13,7 @@ int main() {
   int n;// i; //sum=0;
   printf("Enter no of elements:\n");
   scanf("%d", &n);
-  // Dynamically allocate memory using malloc()
+  // Dynamically allocate memory using calloc()
   // Syntax: (n, element-size) = (X, sizeof(data-type))
   // Syntax: ptr = (cast-type*)calloc(n, element-size);
   p = (int*) calloc (n, sizeof(int)); // Inside the heap memory
