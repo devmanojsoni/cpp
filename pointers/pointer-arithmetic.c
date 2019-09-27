@@ -58,7 +58,7 @@ int main() {
             exit(0);
             getch();
             return 0;
-        }  else {
+        } else {
             //continue;
         }
         
