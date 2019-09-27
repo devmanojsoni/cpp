@@ -14,8 +14,8 @@ int main() {
   printf("Enter no of elements:\n");
   scanf("%d", &n);
   // Dynamically allocate memory using malloc()
-  // Syntax: (byte-size) = X multiplied by the sizeof(data-type)
-  // Syntax: ptr = (cast-type*) malloc (byte-size)
+  // Syntax: (byte-size) --> X multiplied by the sizeof(data-type)
+  // Syntax: malloc --> ptr = (cast-type*) malloc (byte-size)
   p = (int*) malloc (n * sizeof(int)); // inside the heap memory
   
   // Check if the memory has been successfully
