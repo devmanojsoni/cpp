@@ -15,11 +15,11 @@ struct complex {
 struct student {
     int roll; // 2 bytes lets say
     char name[25]; // 1 x 25 = 25bytes
-    char dept[30]; // 1byte
-    char address[100]; // 50bytes
-    //------------------Total 77 bytes, therefore size of this
-    // struct 'student' will be 77 bytes
-    // 78bytes if we would have considered integers as 4bytes
+    char dept[30]; // 1 x 30 = 30bytes
+    char address[100]; // 100bytes
+    //------------------Total 157 bytes, therefore size of this
+    // struct 'student' will be 157 bytes
+    // 159 bytes if we would have considered integers as 4bytes
 };
 
 int main() {
