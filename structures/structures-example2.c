@@ -20,11 +20,23 @@ struct student {
     //------------------Total 157 bytes, therefore size of this
     // struct 'student' will be 157 bytes
     // 159 bytes if we would have considered integers as 4bytes
+    
+    // don't use these styles under struct
+    // char epmtysize[]; // not shwing any errors but later cause issues
+    // Not allowed under struct
+    // char emptySizeCharacterArray[]="size adjusts itself with this flexble array of characters";
+    
 };
 
 int main() {
   
   /*Code here*/
+  // Only declaration with no size is not allowed
+  // char epmtysize[]; 
+  
+  // empty size declaration + initialization is allowed in main, not inunder struct
+  // char emptySizeCharacterArray[]="size adjusts itself with this flexble array of characters";
+  // printf ("%s\n", emptySizeCharacterArray);
   // declare a variable of type student
   struct student s;
   // set the roll no
