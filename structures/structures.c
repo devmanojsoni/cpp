@@ -28,7 +28,7 @@ int main() {
   // Other way to init/access the data members
   r.length=10;
   r.breadth=5;
-  printf("%d", r.length*r.breadth);
+  printf("Area of the rectangle is : %d", r.length*r.breadth);
   
   
   //getch();
