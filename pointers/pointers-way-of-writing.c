@@ -44,7 +44,7 @@ int main() {
   }
   printf("\nTherefore A+i, p+i are all SAME THING and GIVES ADDRESSES:\n");
   
-  //getch();
+  getch();
   return 0;
 }
 
