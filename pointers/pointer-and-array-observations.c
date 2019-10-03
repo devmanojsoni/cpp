@@ -23,6 +23,7 @@ int main() {
   
   printf("-----------Dereferencing Section Starts---------------------\n");
   printf("*p = %d, *A = %d\n\n", *p, *A);
+  printf("%d\n", p);
 
   printf("*(A+i) and *(p+i) are all same thing and gives VALUES at indices of an array\n");
   printf("*(p+0) = %d, *(A+0) = %d\n", *(p+0), *(A+0));
@@ -59,7 +60,7 @@ int main() {
   
   
   
-  //getch();
+  getch();
   return 0;
 }
 
