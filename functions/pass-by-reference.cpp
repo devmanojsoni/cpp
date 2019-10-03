@@ -28,6 +28,12 @@
 // programs/functions, DO NOT use it for heavy functions which are having
 // loops and all, or having complex logic
 
+// Notice that there will be no separate stack frame for swap function,
+// because it is call by reference and references don't take any memory
+// and all the data manipulation performed inside the main function's 
+// stack frame, and infact temp variable created inside the main function's
+// stack frame because swap function didn't allocate it a separate space
+
 void swap(int &x, int &y){ // Formal Parameters, Return type is void
   // Think it as &x=a, &y=b i.e, x is a reference to a, y is to b
   // References are alias, another name given to a variable
