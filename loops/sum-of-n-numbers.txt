@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* Created by Manoj Soni on Thursday, September 19, 2019  */
+/* Description: factorial of a number  */
+
+int main() {
+  
+  /*Code here*/
+  
+  
+  
+  
+  //getch();
+  return 0;
+}
