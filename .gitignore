@@ -9,3 +9,5 @@ tasks.json
 /.vscode/tasks.json
 *.pdf
 *.mine
+dust_bin/
+boilerplates/
