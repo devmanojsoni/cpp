@@ -15,11 +15,8 @@ void fun(int A[], int n){ // notice the array inside the parameter
   // Difference between A[] and *A inside the parameter of a function is:
   // A[] can only point to an array whereas *A can point to any primitive types
   // or arrays or anything
-  int i;
-  for (i=0; i<n; ++i) { // i=0 only initialized once
-   printf("%d",i[A]); // after init --> CPU 1: Condition check, 2: Process statements, 3:Update
-   
-  }
+  A[0]=25; // this can modify array in main, thus A[] is a pointer to A in main
+
 }
 
 int main() {
@@ -36,6 +33,7 @@ int main() {
 
   
   fun(A,5);
+  printf("%d",0[A]);
   
   
   //getch();
